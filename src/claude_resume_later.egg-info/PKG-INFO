@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: claude-resume-later
+Version: 0.1.0
+Summary: A tiny scheduler that kicks Claude to resume jobs after token block resets
+License-Expression: MIT
+Requires-Python: >=3.9

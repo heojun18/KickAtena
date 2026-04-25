@@ -1,0 +1,15 @@
+[Unit]
+Description=Claude Resume Later — run queued jobs
+
+[Service]
+Type=oneshot
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+Environment=LANG=C.UTF-8
+ExecStart=%h/.local/bin/claude-resume-later run-due
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=claude-resume-later
+NoNewPrivileges=true
+PrivateTmp=true
+MemoryMax=512M
+TimeoutStartSec=5h

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-resume-later"
+version = "0.1.0"
+description = "A tiny scheduler that kicks Claude to resume jobs after token block resets"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+claude-resume-later = "claude_resume_later.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

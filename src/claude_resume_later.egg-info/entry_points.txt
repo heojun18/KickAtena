@@ -1,0 +1,2 @@
+[console_scripts]
+claude-resume-later = claude_resume_later.cli:main
